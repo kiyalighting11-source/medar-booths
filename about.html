@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — MEDAR BOOTHS</title>
+  <meta name="description" content="A studio built on craft. Meet the team behind MEDAR BOOTHS — Dubai's premier exhibition design studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader">
+    <div class="loader__brand">
+      <span>M</span><span>E</span><span>D</span><span>A</span><span>R</span>
+    </div>
+    <div class="loader__meta">
+      <span class="loader__num">000</span>
+      <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+      <span>Loading</span>
+    </div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav nav--solid nav--color-shift" id="nav">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark">M</span>
+      <span class="nav__name">Medar<em>Booths</em></span>
+    </a>
+
+    <nav class="nav__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="nav__icon" data-lang-toggle data-hover aria-label="Language">
+        <span data-lang-label>ع</span>
+      </button>
+      <button class="nav__icon" data-theme-toggle data-hover aria-label="Theme">
+        <span data-theme-icon></span>
+      </button>
+      <button class="nav__menu-btn" data-hover aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <span class="page-hero__num" data-reveal>— 02 / Studio</span>
+        <div class="page-hero__title">
+          <h1 data-reveal>
+            <span data-i18n="about.t1">A studio built on</span>
+            <em data-i18n="about.t2">craft, not templates.</em>
+          </h1>
+          <p data-reveal data-i18n="about.sub">
+            We're a team of architects, fabricators, and designers who believe every booth should earn its square meters. No filler. No fluff. Just work that commands the room.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__row">
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span class="counter" data-target="450">0</span><sup>+</sup></div>
+          <div class="stat__label" data-i18n="stats.booths">Booths Delivered</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span class="counter" data-target="12">0</span></div>
+          <div class="stat__label" data-i18n="stats.years">Years Experience</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span class="counter" data-target="28">0</span></div>
+          <div class="stat__label" data-i18n="stats.countries">Countries Served</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span class="counter" data-target="98">0</span><sup>%</sup></div>
+          <div class="stat__label" data-i18n="stats.retention">Client Retention</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="feature">
+        <div class="feature__media" data-reveal>
+          <img src="assets/images/1%20(7).jpeg" alt="MEDAR BOOTHS studio">
+        </div>
+        <div class="feature__content" data-reveal>
+          <span class="eyebrow" data-i18n="about.storyTag">Our Story</span>
+          <p class="feature__quote">
+            <span data-i18n="about.q1">We don't build booths.</span>
+            <em data-i18n="about.q2">We build lasting impressions.</em>
+          </p>
+          <p class="lead" data-i18n="about.p1">
+            MEDAR BOOTHS is a full-service exhibition design & build studio headquartered in Dubai. From the first sketch to the final light fixture, we own every detail.
+          </p>
+          <p class="lead" data-i18n="about.p2">
+            Our in-house team blends architecture, fabrication, and digital experience to deliver booths that don't just hold attention — they command the room.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="section timeline-section">
+    <div class="container">
+      <div class="section-head">
+        <aside class="section-head__side">
+          <span class="section-head__num">— Journey</span>
+          <span class="eyebrow" data-i18n="timeline.tag">Milestones</span>
+        </aside>
+        <div class="section-head__title">
+          <h2 data-reveal>
+            <span data-i18n="timeline.t1">Twelve years</span>
+            <em data-i18n="timeline.t2">in the making.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__line"></div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__year">2013</div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3 data-i18n="timeline.y1t">The Studio Is Born</h3>
+            <p data-i18n="timeline.y1d">MEDAR BOOTHS opens its doors in Al Quoz with a three-person team and a single workshop.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__year">2016</div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3 data-i18n="timeline.y2t">First 100 Booths</h3>
+            <p data-i18n="timeline.y2d">We deliver our 100th booth at GITEX, cementing our reputation across the Gulf region.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__year">2019</div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3 data-i18n="timeline.y3t">Going International</h3>
+            <p data-i18n="timeline.y3d">Our first projects outside the GCC — Riyadh, Cairo, and Doha become regular fixtures.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__year">2022</div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3 data-i18n="timeline.y4t">In-House Fabrication</h3>
+            <p data-i18n="timeline.y4d">We open a 4,000 sqm production facility, bringing every step of the build under one roof.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__year">2024</div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3 data-i18n="timeline.y5t">Digital & Interactive</h3>
+            <p data-i18n="timeline.y5d">Full AV and interactive division launched — LED walls, holograms, and touch experiences.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__year">2025</div>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <h3 data-i18n="timeline.y6t">450 Booths & Counting</h3>
+            <p data-i18n="timeline.y6d">We cross 450 delivered booths across 28 countries — and we're just getting started.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head">
+        <aside class="section-head__side">
+          <span class="section-head__num">— Process</span>
+          <span class="eyebrow" data-i18n="process.tag">How we work</span>
+        </aside>
+        <div class="section-head__title">
+          <h2 data-reveal>
+            <span data-i18n="process.t1">From first sketch</span>
+            <em data-i18n="process.t2">to show floor.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card" data-reveal>
+          <span class="process-card__num">01</span>
+          <div class="process-card__icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 19l7-7 3 3-7 7-3-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M2 2l7.586 7.586" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="11" cy="11" r="2" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="process-card__title" data-i18n="process.p1t">Design</h3>
+          <p class="process-card__desc" data-i18n="process.p1d">Concept, 3D visualization, and brand integration from day one. We sketch, iterate, and render until the vision is undeniable.</p>
+        </div>
+
+        <div class="process-card" data-reveal>
+          <span class="process-card__num">02</span>
+          <div class="process-card__icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="process-card__title" data-i18n="process.p2t">Fabrication</h3>
+          <p class="process-card__desc" data-i18n="process.p2d">In-house production with premium materials and precision. CNC routing, joinery, metalwork, and finish — all under our roof.</p>
+        </div>
+
+        <div class="process-card" data-reveal>
+          <span class="process-card__num">03</span>
+          <div class="process-card__icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M2 3h20v14H2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="process-card__title" data-i18n="process.p3t">Installation</h3>
+          <p class="process-card__desc" data-i18n="process.p3d">On-site build, AV integration, and show-time support. Our crew works through the night so the booth is flawless by opening.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VALUES ============ -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head">
+        <aside class="section-head__side">
+          <span class="section-head__num">— Values</span>
+          <span class="eyebrow" data-i18n="values.tag">What we stand for</span>
+        </aside>
+        <div class="section-head__title">
+          <h2 data-reveal>
+            <span data-i18n="values.t1">Principles behind</span>
+            <em data-i18n="values.t2">every build.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="values-list">
+        <div class="value-row" data-reveal>
+          <span class="value-row__num">01</span>
+          <h3 class="value-row__title" data-i18n="values.v1t">Craft over shortcuts</h3>
+          <p class="value-row__desc" data-i18n="values.v1d">Every joint, every finish, every detail matters. We build as if the booth will stand for a decade — not a week.</p>
+        </div>
+
+        <div class="value-row" data-reveal>
+          <span class="value-row__num">02</span>
+          <h3 class="value-row__title" data-i18n="values.v2t">Design with purpose</h3>
+          <p class="value-row__desc" data-i18n="values.v2d">Beauty alone isn't enough. Every element earns its place by moving visitors toward a goal.</p>
+        </div>
+
+        <div class="value-row" data-reveal>
+          <span class="value-row__num">03</span>
+          <h3 class="value-row__title" data-i18n="values.v3t">One team, one vision</h3>
+          <p class="value-row__desc" data-i18n="values.v3d">Designers, engineers, and builders sit in the same room. No handoffs. No surprises.</p>
+        </div>
+
+        <div class="value-row" data-reveal>
+          <span class="value-row__num">04</span>
+          <h3 class="value-row__title" data-i18n="values.v4t">Delivered on time</h3>
+          <p class="value-row__desc" data-i18n="values.v4d">Expos don't wait. We plan for the worst, deliver on the dot, and stay on-site until lights out.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS SLIDER ============ -->
+  <section class="section testimonials-section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head">
+        <aside class="section-head__side">
+          <span class="section-head__num">— Voices</span>
+          <span class="eyebrow" data-i18n="testimonials.tag">What clients say</span>
+        </aside>
+        <div class="section-head__title">
+          <h2 data-reveal>
+            <span data-i18n="testimonials.t1">Trusted by</span>
+            <em data-i18n="testimonials.t2">brands worldwide.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/images/1%20(7).jpg" alt="Client" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name" data-i18n="testimonials.c1n">Sarah Mitchell</h2>
+                <span class="role" data-i18n="testimonials.c1r">Marketing Director · Vertex</span>
+                <p class="description" data-i18n="testimonials.c1d">The MEDAR team delivered a booth that stopped traffic at GITEX. Every detail was considered.</p>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/images/1%20(1).jpg" alt="Client" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name" data-i18n="testimonials.c2n">Khalid Al Mansouri</h2>
+                <span class="role" data-i18n="testimonials.c2r">CEO · Nova Motors</span>
+                <p class="description" data-i18n="testimonials.c2d">We've worked with agencies across the Gulf. Nobody comes close to MEDAR's level of craft.</p>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/images/1%20(3).jpg" alt="Client" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name" data-i18n="testimonials.c3n">Dr. Amira Hassan</h2>
+                <span class="role" data-i18n="testimonials.c3r">Director · MediCore Labs</span>
+                <p class="description" data-i18n="testimonials.c3d">Professional from first sketch to final install. The booth became the talk of Arab Health.</p>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/images/1%20(4).jpg" alt="Client" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name" data-i18n="testimonials.c4n">James Okonkwo</h2>
+                <span class="role" data-i18n="testimonials.c4r">Brand Lead · Aurora Foods</span>
+                <p class="description" data-i18n="testimonials.c4d">They understood our brand better than we did. The result was unforgettable.</p>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/images/1%20(5).jpg" alt="Client" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name" data-i18n="testimonials.c5n">Layla Farsi</h2>
+                <span class="role" data-i18n="testimonials.c5r">Founder · Lumia Jewelry</span>
+                <p class="description" data-i18n="testimonials.c5d">Luxurious, precise, on time. Exactly what you want from a booth partner.</p>
+              </div>
+            </div>
+
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/images/1%20(1).jpg" alt="Client" class="card-img">
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name" data-i18n="testimonials.c6n">Roberto Silva</h2>
+                <span class="role" data-i18n="testimonials.c6r">Head of Events · Quanta</span>
+                <p class="description" data-i18n="testimonials.c6d">Perfect execution under pressure. The install crew worked all night to make it happen.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Design</span><span>Build</span><span>Install</span><span>Repeat</span>
+      <span>Design</span><span>Build</span><span>Install</span><span>Repeat</span>
+    </div>
+  </div>
+
+  <!-- ============ CTA (DARK) ============ -->
+  <section class="cta-block" data-nav-theme="dark">
+    <div class="container">
+      <div class="cta-block__inner">
+        <h2 data-reveal>
+          <span data-i18n="cta.t1">Let's build</span>
+          <em data-i18n="cta.t2">something bold</em>
+          <span data-i18n="cta.t3">together.</span>
+        </h2>
+        <div class="cta-block__side" data-reveal>
+          <p data-i18n="cta.sub">Tell us about your next expo. We'll come back with a concept, timeline, and a plan.</p>
+          <a href="contact.html" class="btn btn--primary" data-hover style="align-self: flex-start;">
+            <span data-i18n="cta.btn">Start a project</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Medar<em>Booths</em></div>
+          <p class="footer__tag" data-i18n="footer.tag">Exhibition design & build studio based in Dubai, working worldwide.</p>
+        </div>
+
+        <div class="footer__col">
+          <h5 data-i18n="footer.nav">Navigate</h5>
+          <ul>
+            <li><a href="index.html" data-hover data-i18n="nav.work">Work</a></li>
+            <li><a href="videos.html" data-hover data-i18n="nav.videos">Videos</a></li>
+            <li><a href="gallery.html" data-hover data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="about.html" data-hover data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-hover data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h5 data-i18n="footer.social">Social</h5>
+          <ul>
+            <li><a href="#" data-hover>Instagram</a></li>
+            <li><a href="#" data-hover>Behance</a></li>
+            <li><a href="#" data-hover>LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@medarbooths.com" data-hover>hello@medarbooths.com</a></li>
+            <li><a href="tel:+97140000000" data-hover>+971 4 000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">© 2025 MEDAR BOOTHS. All rights reserved.</span>
+        <span>Dubai · Riyadh · Cairo</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

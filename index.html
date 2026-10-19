@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEDAR BOOTHS — Exhibition Design Studio</title>
+  <meta name="description" content="Full-service exhibition booth design and build studio based in Dubai, working worldwide." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader">
+    <div class="loader__brand">
+      <span>M</span><span>E</span><span>D</span><span>A</span><span>R</span>
+    </div>
+    <div class="loader__meta">
+      <span class="loader__num">000</span>
+      <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+      <span>Loading</span>
+    </div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav nav--on-image nav--color-shift" id="nav">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark">M</span>
+      <span class="nav__name">Medar<em>Booths</em></span>
+    </a>
+
+    <nav class="nav__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="nav__icon" data-lang-toggle data-hover aria-label="Language">
+        <span data-lang-label>ع</span>
+      </button>
+      <button class="nav__icon" data-theme-toggle data-hover aria-label="Theme">
+        <span data-theme-icon></span>
+      </button>
+      <button class="nav__menu-btn" data-hover aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu">
+    <div class="mobile-menu__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" data-nav-theme="dark">
+    <div class="hero__media">
+      <img src="assets/images/1%20(1).jpeg" alt="Exhibition hall">
+      <!-- Video is injected by main.js -->
+    </div>
+
+    <div class="hero__inner">
+      <div class="container" style="flex: 1; display: flex; flex-direction: column;">
+        <div class="hero__meta">
+          <div class="hero__tag" data-reveal>
+            <span class="hero__tag-dot"></span>
+            <span data-i18n="hero.stamp">Available for Q1 2026</span>
+          </div>
+          <span class="eyebrow" style="color: rgba(255,255,255,0.65);" data-reveal data-i18n="hero.eyebrow">Exhibition Design Studio</span>
+        </div>
+
+        <h1 class="hero__title" style="margin-top: auto;">
+          <span class="line"><span data-i18n="hero.t1">We craft</span></span>
+          <span class="line"><span data-i18n="hero.t2">spaces that</span></span>
+          <span class="line"><span><em data-i18n="hero.t3">command attention.</em></span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__sub" data-reveal data-i18n="hero.sub">
+            From concept to construction — MEDAR BOOTHS builds immersive exhibition experiences for brands that refuse to blend in.
+          </p>
+          <div class="hero__cta" data-reveal>
+            <a href="gallery.html" class="btn btn--light" data-hover>
+              <span data-i18n="hero.cta1">View Work</span>
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="contact.html" class="btn btn--outline-light" data-hover data-i18n="hero.cta2">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Dubai</span><span>Riyadh</span><span>Cairo</span><span>Doha</span><span>Abu Dhabi</span>
+      <span>Dubai</span><span>Riyadh</span><span>Cairo</span><span>Doha</span><span>Abu Dhabi</span>
+    </div>
+  </div>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__row">
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span class="counter" data-target="450">0</span><sup>+</sup></div>
+          <div class="stat__label" data-i18n="stats.booths">Booths Delivered</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span class="counter" data-target="12">0</span></div>
+          <div class="stat__label" data-i18n="stats.years">Years Experience</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span class="counter" data-target="28">0</span></div>
+          <div class="stat__label" data-i18n="stats.countries">Countries Served</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span class="counter" data-target="98">0</span><sup>%</sup></div>
+          <div class="stat__label" data-i18n="stats.retention">Client Retention</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK / PROJECTS ============ -->
+  <section class="section section--overlap" style="background: var(--bg);">
+    <div class="container">
+      <div class="section-head">
+        <aside class="section-head__side">
+          <span class="section-head__num">— 01</span>
+          <span class="eyebrow" data-i18n="work.tag">Selected Work</span>
+        </aside>
+        <div class="section-head__title">
+          <h2 data-reveal>
+            <span data-i18n="work.t1">Projects that</span>
+            <em data-i18n="work.t2">speak louder</em>
+            <span data-i18n="work.t3">than words.</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="projects">
+        <article class="project project--wide" data-reveal>
+          <div class="project__media">
+            <img src="assets/images/1%20(2).jpeg" alt="Vertex Systems — GITEX 2025">
+          </div>
+          <div class="project__meta">
+            <div>
+              <span class="project__cat">Tech · Dubai</span>
+              <h3 class="project__title">Vertex Systems — GITEX 2025</h3>
+            </div>
+            <div class="project__arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project--narrow" data-reveal>
+          <div class="project__media">
+            <img src="assets/images/1%20(3).jpeg" alt="Nova Motors">
+          </div>
+          <div class="project__meta">
+            <div>
+              <span class="project__cat">Automotive · Riyadh</span>
+              <h3 class="project__title">Nova Motors</h3>
+            </div>
+            <div class="project__arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-reveal>
+          <div class="project__media">
+            <img src="assets/images/1%20(4).jpeg" alt="MediCore Labs">
+          </div>
+          <div class="project__meta">
+            <div>
+              <span class="project__cat">Healthcare · Abu Dhabi</span>
+              <h3 class="project__title">MediCore Labs</h3>
+            </div>
+            <div class="project__arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-reveal>
+          <div class="project__media">
+            <img src="assets/images/1%20(5).jpeg" alt="Aurora Foods">
+          </div>
+          <div class="project__meta">
+            <div>
+              <span class="project__cat">FMCG · Doha</span>
+              <h3 class="project__title">Aurora Foods</h3>
+            </div>
+            <div class="project__arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;" data-reveal>
+        <a href="gallery.html" class="btn btn--primary" data-hover>
+          <span data-i18n="work.cta">View Full Gallery</span>
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURE (About) ============ -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="feature">
+        <div class="feature__media" data-reveal>
+          <img src="assets/images/1%20(6).jpeg" alt="Booth in progress">
+        </div>
+        <div class="feature__content" data-reveal>
+          <span class="eyebrow" data-i18n="about.tag">The Studio</span>
+          <p class="feature__quote">
+            <span data-i18n="about.q1">We don't build booths.</span>
+            <em data-i18n="about.q2">We build lasting impressions.</em>
+          </p>
+          <p class="lead" data-i18n="about.p1">
+            MEDAR BOOTHS is a full-service exhibition design & build studio headquartered in Dubai. From the first sketch to the final light fixture, we own every detail.
+          </p>
+          <a href="about.html" class="btn btn--outline" data-hover style="align-self: flex-start;">
+            <span data-i18n="about.btn">More about us</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head">
+        <aside class="section-head__side">
+          <span class="section-head__num">— 02</span>
+          <span class="eyebrow" data-i18n="services.tag">Services</span>
+        </aside>
+        <div class="section-head__title">
+          <h2 data-reveal>
+            <span data-i18n="services.t1">Everything under</span>
+            <em data-i18n="services.t2">one roof.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="services-list">
+        <div class="service-row" data-reveal>
+          <span class="service-row__num">01</span>
+          <h3 class="service-row__title" data-i18n="services.s1">Custom Booth Design</h3>
+          <p class="service-row__desc" data-i18n="services.s1d">Bespoke concepts tailored to your brand DNA.</p>
+          <div class="service-row__arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-row" data-reveal>
+          <span class="service-row__num">02</span>
+          <h3 class="service-row__title" data-i18n="services.s2">3D Visualization</h3>
+          <p class="service-row__desc" data-i18n="services.s2d">Photo-real renders before a single panel is cut.</p>
+          <div class="service-row__arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-row" data-reveal>
+          <span class="service-row__num">03</span>
+          <h3 class="service-row__title" data-i18n="services.s3">Production & Build</h3>
+          <p class="service-row__desc" data-i18n="services.s3d">Precision fabrication in our dedicated facility.</p>
+          <div class="service-row__arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-row" data-reveal>
+          <span class="service-row__num">04</span>
+          <h3 class="service-row__title" data-i18n="services.s4">AV & Interactive</h3>
+          <p class="service-row__desc" data-i18n="services.s4d">LED walls, touchscreens, holograms, and sound.</p>
+          <div class="service-row__arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="service-row" data-reveal>
+          <span class="service-row__num">05</span>
+          <h3 class="service-row__title" data-i18n="services.s5">Event Management</h3>
+          <p class="service-row__desc" data-i18n="services.s5d">Logistics, permits, and on-site coordination.</p>
+          <div class="service-row__arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H8M17 7v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MINI GALLERY STRIP ============ -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-head">
+        <aside class="section-head__side">
+          <span class="section-head__num">— 03</span>
+          <span class="eyebrow" data-i18n="galleryStrip.tag">Recent Shots</span>
+        </aside>
+        <div class="section-head__title">
+          <h2 data-reveal>
+            <span data-i18n="galleryStrip.t1">A peek at</span>
+            <em data-i18n="galleryStrip.t2">our craft.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="projects">
+        <article class="project" data-reveal>
+          <div class="project__media">
+            <img src="assets/images/1%20(10).jpeg" alt="Booth shot">
+          </div>
+        </article>
+        <article class="project" data-reveal>
+          <div class="project__media">
+            <img src="assets/images/1%20(15).jpeg" alt="Booth shot">
+          </div>
+        </article>
+        <article class="project" data-reveal>
+          <div class="project__media">
+            <img src="assets/images/1%20(22).jpeg" alt="Booth shot">
+          </div>
+        </article>
+        <article class="project" data-reveal>
+          <div class="project__media">
+            <img src="assets/images/1%20(30).jpeg" alt="Booth shot">
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;" data-reveal>
+        <a href="gallery.html" class="btn btn--outline" data-hover>
+          <span data-i18n="galleryStrip.viewAll">View all 41 images</span>
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BLOCK (DARK) ============ -->
+  <section class="cta-block" data-nav-theme="dark">
+    <div class="container">
+      <div class="cta-block__inner">
+        <h2 data-reveal>
+          <span data-i18n="cta.t1">Let's build</span>
+          <em data-i18n="cta.t2">something bold</em>
+          <span data-i18n="cta.t3">together.</span>
+        </h2>
+        <div class="cta-block__side" data-reveal>
+          <p data-i18n="cta.sub">Tell us about your next expo. We'll come back with a concept, timeline, and a plan.</p>
+          <a href="contact.html" class="btn btn--primary" data-hover style="align-self: flex-start;">
+            <span data-i18n="cta.btn">Start a project</span>
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Medar<em>Booths</em></div>
+          <p class="footer__tag" data-i18n="footer.tag">Exhibition design & build studio based in Dubai, working worldwide.</p>
+        </div>
+
+        <div class="footer__col">
+          <h5 data-i18n="footer.nav">Navigate</h5>
+          <ul>
+            <li><a href="index.html" data-hover data-i18n="nav.work">Work</a></li>
+            <li><a href="videos.html" data-hover data-i18n="nav.videos">Videos</a></li>
+            <li><a href="gallery.html" data-hover data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="about.html" data-hover data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-hover data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h5 data-i18n="footer.social">Social</h5>
+          <ul>
+            <li><a href="#" data-hover>Instagram</a></li>
+            <li><a href="#" data-hover>Behance</a></li>
+            <li><a href="#" data-hover>LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@medarbooths.com" data-hover>hello@medarbooths.com</a></li>
+            <li><a href="tel:+97140000000" data-hover>+971 4 000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">© 2025 MEDAR BOOTHS. All rights reserved.</span>
+        <span>Dubai · Riyadh · Cairo</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

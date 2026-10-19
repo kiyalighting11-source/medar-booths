@@ -1,0 +1,295 @@
+/* ============================================
+   MEDAR BOOTHS — Base
+   Reset, Variables, Typography, Scrollbar
+   ============================================ */
+
+/* ==========================================
+   1. RESET
+   ========================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   2. CSS VARIABLES
+   ========================================== */
+:root {
+  /* ---------- Light Theme ---------- */
+  --bg: #faf7f2;
+  --bg-elevated: #ffffff;
+  --bg-inverse: #14110d;
+
+  --ink: #14110d;
+  --ink-soft: #3a342c;
+  --muted: #7a7367;
+  --muted-2: #a8a193;
+
+  --accent: #e85d3a;
+  --accent-soft: #ffe6dc;
+  --accent-2: #c9a961;
+
+  --line: rgba(20, 17, 13, 0.08);
+  --line-2: rgba(20, 17, 13, 0.05);
+
+  --shadow-sm: 0 1px 2px rgba(20, 17, 13, 0.04),
+               0 2px 8px rgba(20, 17, 13, 0.04);
+  --shadow-md: 0 12px 32px -12px rgba(20, 17, 13, 0.14);
+  --shadow-lg: 0 40px 80px -24px rgba(20, 17, 13, 0.20);
+
+  /* ---------- Typography ---------- */
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-arabic: 'Cairo', sans-serif;
+
+  /* ---------- Motion ---------- */
+  --ease: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---------- Layout ---------- */
+  --max: 1440px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --nav-h: 88px;
+
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 32px;
+  --radius-full: 999px;
+}
+
+/* ---------- Dark Theme ---------- */
+[data-theme="dark"] {
+  --bg: #0f0d0a;
+  --bg-elevated: #1a1712;
+  --bg-inverse: #faf7f2;
+
+  --ink: #faf7f2;
+  --ink-soft: #d8d0c2;
+  --muted: #8a8276;
+  --muted-2: #5f594f;
+
+  --accent: #ff7554;
+  --accent-soft: #2a1a14;
+  --accent-2: #e0bc78;
+
+  --line: rgba(250, 247, 242, 0.08);
+  --line-2: rgba(250, 247, 242, 0.05);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3),
+               0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 32px -12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 40px 80px -24px rgba(0, 0, 0, 0.6);
+}
+
+/* ==========================================
+   3. HTML / BODY
+   ========================================== */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
+  letter-spacing: -0.011em;
+  color: var(--ink);
+  background: var(--bg);
+  overflow-x: hidden;
+  cursor: none;
+  transition:
+    background 0.6s var(--ease),
+    color 0.6s var(--ease);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-arabic);
+  letter-spacing: 0;
+}
+
+/* ==========================================
+   4. ELEMENT RESETS
+   ========================================== */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: none;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ==========================================
+   5. SELECTION & SCROLLBAR
+   ========================================== */
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted-2) var(--bg);
+}
+
+/* ==========================================
+   6. TYPOGRAPHY — HEADINGS
+   ========================================== */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  color: var(--ink);
+}
+
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4 {
+  font-family: var(--font-arabic);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 7vw, 6.5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+/* ==========================================
+   7. TYPOGRAPHY — UTILITY CLASSES
+   ========================================== */
+.serif {
+  font-family: 'Instrument Serif', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+html[dir="rtl"] .serif {
+  font-family: var(--font-arabic);
+  font-weight: 800;
+  font-style: normal;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+html[dir="rtl"] .eyebrow {
+  font-family: var(--font-arabic);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.lead {
+  font-size: clamp(1.05rem, 1.35vw, 1.2rem);
+  line-height: 1.55;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 9vw, 8.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+}
+
+html[dir="rtl"] .display {
+  font-family: var(--font-arabic);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+/* ==========================================
+   8. LINK & FOCUS
+   ========================================== */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ==========================================
+   9. REDUCED MOTION
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

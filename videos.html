@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Videos — MEDAR BOOTHS</title>
+  <meta name="description" content="Behind-the-scenes videos from 13 partner companies we've built booths for." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/videos.css">
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader__brand"><span>M</span><span>E</span><span>D</span><span>A</span><span>R</span></div>
+    <div class="loader__meta">
+      <span class="loader__num">000</span>
+      <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+      <span>Loading</span>
+    </div>
+  </div>
+
+  <header class="nav nav--solid" id="nav">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark">M</span>
+      <span class="nav__name">Medar<em>Booths</em></span>
+    </a>
+    <nav class="nav__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__icon" data-lang-toggle data-hover aria-label="Language"><span data-lang-label>ع</span></button>
+      <button class="nav__icon" data-theme-toggle data-hover aria-label="Theme"><span data-theme-icon></span></button>
+      <button class="nav__menu-btn" data-hover aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <span class="page-hero__num" data-reveal>— 04 / Videos</span>
+        <div class="page-hero__title">
+          <h1 data-reveal>
+            <span data-i18n="videos.t1">Work in</span>
+            <em data-i18n="videos.t2">motion.</em>
+          </h1>
+          <p data-reveal data-i18n="videos.sub">
+            Behind-the-scenes videos from 13 partner companies we've built booths for.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY INDEX (quick jump) -->
+  <nav class="videos-index" id="videosIndex" aria-label="Videos index">
+    <div class="container">
+      <div class="videos-index__scroll" id="videosIndexScroll">
+        <!-- Populated by videos.js -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- 13 SECTIONS (rendered by videos.js) -->
+  <main id="videosSections" class="videos-sections">
+    <!-- Populated by videos.js -->
+  </main>
+
+  <!-- CTA -->
+  <section class="cta-block">
+    <div class="container">
+      <div class="cta-block__inner">
+        <h2 data-reveal>
+          <span data-i18n="videos.cta.t1">Your booth</span>
+          <em data-i18n="videos.cta.t2">could be next.</em>
+        </h2>
+        <div class="cta-block__side" data-reveal>
+          <p data-i18n="videos.cta.sub">Have an upcoming expo? Let's build something worth filming.</p>
+          <a href="contact.html" class="btn btn--primary" data-hover style="align-self: flex-start;">
+            <span data-i18n="cta.btn">Start a project</span>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Medar<em>Booths</em></div>
+          <p class="footer__tag" data-i18n="footer.tag">Exhibition design & build studio based in Dubai, working worldwide.</p>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.nav">Navigate</h5>
+          <ul>
+            <li><a href="index.html" data-hover data-i18n="nav.work">Work</a></li>
+            <li><a href="videos.html" data-hover data-i18n="nav.videos">Videos</a></li>
+            <li><a href="gallery.html" data-hover data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="about.html" data-hover data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-hover data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.social">Social</h5>
+          <ul>
+            <li><a href="#" data-hover>Instagram</a></li>
+            <li><a href="#" data-hover>Behance</a></li>
+            <li><a href="#" data-hover>LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@medarbooths.com" data-hover>hello@medarbooths.com</a></li>
+            <li><a href="tel:+97140000000" data-hover>+971 4 000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">© 2025 MEDAR BOOTHS. All rights reserved.</span>
+        <span>Dubai · Riyadh · Cairo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/videos-data.js"></script>
+  <script src="js/videos.js"></script>
+</body>
+</html>

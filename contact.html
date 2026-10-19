@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — MEDAR BOOTHS</title>
+  <meta name="description" content="Get in touch with MEDAR BOOTHS for your next exhibition project." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <div class="bg-mesh">
+    <div class="bg-mesh__orb bg-mesh__orb--1"></div>
+    <div class="bg-mesh__orb bg-mesh__orb--2"></div>
+    <div class="bg-mesh__orb bg-mesh__orb--3"></div>
+  </div>
+  <div class="bg-grain"></div>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader__brand"><span>M</span><span>E</span><span>D</span><span>A</span><span>R</span></div>
+    <div class="loader__meta">
+      <span class="loader__num">000</span>
+      <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+      <span>Loading</span>
+    </div>
+  </div>
+
+  <header class="nav">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark">M</span>
+      <span class="nav__name">Medar<em>Booths</em></span>
+    </a>
+    <nav class="nav__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__icon" data-lang-toggle data-hover aria-label="Language"><span data-lang-label>ع</span></button>
+      <button class="nav__icon" data-theme-toggle data-hover aria-label="Theme"><span data-theme-icon></span></button>
+      <button class="nav__menu-btn" data-hover aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero__num" data-reveal>— 03 / Contact</span>
+      <h1 data-reveal>
+        <span data-i18n="contact.t1">Let's talk about</span>
+        <span class="italic" style="color: var(--accent-2);" data-i18n="contact.t2">your next expo.</span>
+      </h1>
+      <p data-reveal data-i18n="contact.sub">Tell us about the event, the size, and the vibe. We'll come back within 24 hours with a plan and a ballpark.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT LAYOUT -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: Info -->
+        <aside class="contact-info" data-reveal>
+          <div class="contact-info__block">
+            <span class="contact-info__label" data-i18n="contact.email">Email</span>
+            <a href="mailto:hello@medarbooths.com" class="contact-info__value" data-hover>hello@medarbooths.com</a>
+            <a href="mailto:projects@medarbooths.com" class="contact-info__value" data-hover>projects@medarbooths.com</a>
+          </div>
+
+          <div class="contact-info__block">
+            <span class="contact-info__label" data-i18n="contact.phone">Phone</span>
+            <a href="tel:+97140000000" class="contact-info__value" data-hover>+971 4 000 0000</a>
+            <a href="tel:+97150000000" class="contact-info__value" data-hover>+971 50 000 0000</a>
+          </div>
+
+          <div class="contact-info__block">
+            <span class="contact-info__label" data-i18n="contact.studio">Studio</span>
+            <p class="contact-info__text">
+              Warehouse 12, Al Quoz<br>
+              Dubai, United Arab Emirates
+            </p>
+          </div>
+
+          <div class="contact-info__block">
+            <span class="contact-info__label" data-i18n="contact.hours">Hours</span>
+            <p class="contact-info__text">
+              Sun — Thu · 9:00 — 18:00<br>
+              <span data-i18n="contact.hours.fri">Friday by appointment</span>
+            </p>
+          </div>
+        </aside>
+
+        <!-- RIGHT: Form -->
+        <div class="contact-form-wrap" data-reveal>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row form-row--2">
+              <div class="field">
+                <label for="name" data-i18n="form.name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Ahmed Hassan" required>
+              </div>
+              <div class="field">
+                <label for="company" data-i18n="form.company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Acme Corp">
+              </div>
+            </div>
+
+            <div class="form-row form-row--2">
+              <div class="field">
+                <label for="email" data-i18n="form.email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+              </div>
+              <div class="field">
+                <label for="phone" data-i18n="form.phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+971 50 000 0000">
+              </div>
+            </div>
+
+            <div class="form-row form-row--2">
+              <div class="field">
+                <label for="service" data-i18n="form.service">Service</label>
+                <select id="service" name="service">
+                  <option value="">Select...</option>
+                  <option value="design" data-i18n="form.service.design">Booth Design</option>
+                  <option value="build" data-i18n="form.service.build">Build & Install</option>
+                  <option value="full" data-i18n="form.service.full">Full Service</option>
+                  <option value="other" data-i18n="form.service.other">Something else</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="budget" data-i18n="form.budget">Budget range</label>
+                <select id="budget" name="budget">
+                  <option value="">Select...</option>
+                  <option value="s">Under $50K</option>
+                  <option value="m">$50K — $150K</option>
+                  <option value="l">$150K — $500K</option>
+                  <option value="xl">$500K+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message" data-i18n="form.message">Tell us about the project</label>
+              <textarea id="message" name="message" rows="5" placeholder="Expo name, date, size, what you're after..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" data-hover>
+              <span data-i18n="form.submit">Send message</span>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+
+            <p class="form-status" id="formStatus" data-i18n="form.status">We'll get back to you within 24 hours.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP / STUDIO -->
+  <section class="studio-block">
+    <div class="container">
+      <div class="studio-block__inner">
+        <div data-reveal>
+          <span class="page-hero__num">— Studio</span>
+          <h2 class="heading" style="margin-top: 1rem;">
+            <span data-i18n="studio.t1">Come see</span>
+            <span class="italic" data-i18n="studio.t2">where we build.</span>
+          </h2>
+          <p class="lead" style="margin-top: 1rem;" data-i18n="studio.p">
+            Our warehouse and design studio sit side by side in Al Quoz — the creative heart of Dubai. Drop by for a coffee and a walk-through.
+          </p>
+        </div>
+        <div class="studio-block__map" data-reveal>
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=55.2%2C25.1%2C55.3%2C25.2&layer=mapnik&marker=25.15%2C55.25"
+            loading="lazy" title="MEDAR BOOTHS Studio Location"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Medar<em>Booths</em></div>
+          <p class="footer__tag" data-i18n="footer.tag">Exhibition design & build studio based in Dubai, working worldwide.</p>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.nav">Navigate</h5>
+          <ul>
+            <li><a href="index.html" data-hover data-i18n="nav.work">Work</a></li>
+            <li><a href="videos.html" data-hover data-i18n="nav.videos">Videos</a></li>
+            <li><a href="gallery.html" data-hover data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="about.html" data-hover data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-hover data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.social">Social</h5>
+          <ul>
+            <li><a href="#" data-hover>Instagram</a></li>
+            <li><a href="#" data-hover>Behance</a></li>
+            <li><a href="#" data-hover>LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@medarbooths.com" data-hover>hello@medarbooths.com</a></li>
+            <li><a href="tel:+97140000000" data-hover>+971 4 000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">© 2025 MEDAR BOOTHS. All rights reserved.</span>
+        <span>Dubai · Riyadh · Cairo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

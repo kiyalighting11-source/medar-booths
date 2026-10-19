@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — MEDAR BOOTHS</title>
+  <meta name="description" content="Explore our portfolio — 40+ booth builds and behind-the-scenes videos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader__brand"><span>M</span><span>E</span><span>D</span><span>A</span><span>R</span></div>
+    <div class="loader__meta">
+      <span class="loader__num">000</span>
+      <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+      <span>Loading</span>
+    </div>
+  </div>
+
+  <header class="nav nav--solid" id="nav">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__mark">M</span>
+      <span class="nav__name">Medar<em>Booths</em></span>
+    </a>
+    <nav class="nav__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__icon" data-lang-toggle data-hover aria-label="Language"><span data-lang-label>ع</span></button>
+      <button class="nav__icon" data-theme-toggle data-hover aria-label="Theme"><span data-theme-icon></span></button>
+      <button class="nav__menu-btn" data-hover aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__links">
+      <a href="index.html" data-i18n="nav.work">Work</a>
+      <a href="videos.html" data-i18n="nav.videos">Videos</a>
+      <a href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <span class="page-hero__num">— 01 / Portfolio</span>
+        <div class="page-hero__title">
+          <h1 data-reveal>
+            <span data-i18n="gallery.t1">A gallery of</span>
+            <em data-i18n="gallery.t2">craftsmanship.</em>
+          </h1>
+          <p data-reveal data-i18n="gallery.sub">41 booth builds + 20 behind-the-scenes videos from expos around the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="gallery-filters-wrap">
+    <div class="container">
+      <div class="gallery-filters" data-reveal>
+        <button class="filter-btn active" data-filter="all" data-hover>
+          <span data-i18n="gallery.filter.all">All Work</span>
+          <span class="filter-btn__count">61</span>
+        </button>
+        <button class="filter-btn" data-filter="tech" data-hover>
+          <span data-i18n="gallery.filter.tech">Tech</span>
+          <span class="filter-btn__count">17</span>
+        </button>
+        <button class="filter-btn" data-filter="auto" data-hover>
+          <span data-i18n="gallery.filter.auto">Automotive</span>
+          <span class="filter-btn__count">10</span>
+        </button>
+        <button class="filter-btn" data-filter="health" data-hover>
+          <span data-i18n="gallery.filter.health">Healthcare</span>
+          <span class="filter-btn__count">10</span>
+        </button>
+        <button class="filter-btn" data-filter="fmcg" data-hover>
+          <span data-i18n="gallery.filter.fmcg">FMCG</span>
+          <span class="filter-btn__count">9</span>
+        </button>
+        <button class="filter-btn" data-filter="luxury" data-hover>
+          <span data-i18n="gallery.filter.luxury">Luxury</span>
+          <span class="filter-btn__count">10</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMAGES GRID -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-head" style="margin-bottom: 2.5rem;">
+        <aside class="section-head__side">
+          <span class="section-head__num">— Images</span>
+          <span class="eyebrow" data-i18n="gallery.images">Photography · 41 shots</span>
+        </aside>
+        <div class="section-head__title">
+          <h2 data-reveal style="font-size: clamp(1.5rem, 3vw, 2.25rem);">
+            <span data-i18n="gallery.imagesTitle">Booths in</span>
+            <em data-i18n="gallery.imagesTitle2">full color.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="gallery-grid" id="imageGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEOS SECTION -->
+  <section class="videos-section">
+    <div class="container">
+      <div class="section-head" style="margin-bottom: 2.5rem;">
+        <aside class="section-head__side">
+          <span class="section-head__num">— Motion</span>
+          <span class="eyebrow" data-i18n="gallery.videos">Behind the scenes · 12 videos</span>
+        </aside>
+        <div class="section-head__title">
+          <h2 data-reveal style="font-size: clamp(1.5rem, 3vw, 2.25rem);">
+            <span data-i18n="gallery.videosTitle">Booths in</span>
+            <em data-i18n="gallery.videosTitle2">motion.</em>
+          </h2>
+        </div>
+      </div>
+
+      <div class="videos-grid" id="videoGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-block">
+    <div class="container">
+      <div class="cta-block__inner">
+        <h2 data-reveal>
+          <span data-i18n="gallery.cta.t1">Your booth</span>
+          <em data-i18n="gallery.cta.t2">belongs here.</em>
+        </h2>
+        <div class="cta-block__side" data-reveal>
+          <p data-i18n="gallery.cta.sub">Have an upcoming expo? Let's design something visitors won't forget.</p>
+          <a href="contact.html" class="btn btn--primary" data-hover style="align-self: flex-start;">
+            <span data-i18n="cta.btn">Start a project</span>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Previous">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__next" aria-label="Next">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </button>
+    <div class="lightbox__content">
+      <img class="lightbox__img" src="" alt="">
+      <video class="lightbox__video" style="display:none;" controls playsinline></video>
+      <div class="lightbox__caption">
+        <span class="lightbox__cat"></span>
+        <h4 class="lightbox__title"></h4>
+      </div>
+    </div>
+    <div class="lightbox__counter">
+      <span class="lightbox__current">1</span> / <span class="lightbox__total">41</span>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Medar<em>Booths</em></div>
+          <p class="footer__tag" data-i18n="footer.tag">Exhibition design & build studio based in Dubai, working worldwide.</p>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.nav">Navigate</h5>
+          <ul>
+            <li><a href="index.html" data-hover data-i18n="nav.work">Work</a></li>
+            <li><a href="videos.html" data-hover data-i18n="nav.videos">Videos</a></li>
+            <li><a href="gallery.html" data-hover data-i18n="nav.gallery">Gallery</a></li>
+            <li><a href="about.html" data-hover data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" data-hover data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.social">Social</h5>
+          <ul>
+            <li><a href="#" data-hover>Instagram</a></li>
+            <li><a href="#" data-hover>Behance</a></li>
+            <li><a href="#" data-hover>LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5 data-i18n="footer.contact">Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@medarbooths.com" data-hover>hello@medarbooths.com</a></li>
+            <li><a href="tel:+97140000000" data-hover>+971 4 000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">© 2025 MEDAR BOOTHS. All rights reserved.</span>
+        <span>Dubai · Riyadh · Cairo</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
